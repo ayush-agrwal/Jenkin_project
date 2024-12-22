@@ -1,0 +1,5 @@
+REM Store the current date inside a variable named "DATE"
+for /f %%i in ('date /t') do set DATE=%%i
+REM 7-Zip command to create an archive
+"C:\Program Files\7-Zip\7z.exe" a -t7z C:\Jenkins_Backup\
+Backup_%DATE%.7z C:\Jenkins\*
