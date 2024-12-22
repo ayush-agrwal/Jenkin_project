@@ -1,1 +1,6 @@
-
+REM Echo the temp directory
+echo %temp%
+REM Go to the temp directory
+cd %temp%
+REM List all the files and folders inside the temp directory
+dir /B
